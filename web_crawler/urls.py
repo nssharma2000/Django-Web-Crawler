@@ -20,6 +20,6 @@ from WebCrawler import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="home"),
-    path('crawl', views.crawl, name="crawl")
+    path('/', views.index, name="home"),
+    path('crawl/', views.crawl, name="crawl")
 ]
