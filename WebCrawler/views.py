@@ -28,5 +28,5 @@ def crawl(request):
         crawled_url = request.POST['crawled_url']
         depth = int(request.POST['depth_i'])
     crawled_links = crawler(crawled_url, depth)
-    context = { "url" : crawled_url , "crawled_data" : crawled_links, "crawled_links" : json.dumps({"crawled_links" : crawled_links})}
+    context = { "url" : crawled_url , "crawled_data" : crawled_links, "crawled_links" : json.loads(json.dumps({"crawled_links": crawled_links}))}
     return render(request, "home.html", context)
