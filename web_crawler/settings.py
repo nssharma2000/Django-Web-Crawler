@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cky$uvg@$+4*5)lwu=!x*g#xx6ekwk#hu)z0mq85v_#apncla9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django-web-crawler-ns.netlify.app/']
+ALLOWED_HOSTS = ['https://django-web-crawler.onrender.com/']
 
 
 # Application definition
